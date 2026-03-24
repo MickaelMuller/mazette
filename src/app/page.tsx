@@ -3,6 +3,7 @@ import Booking from "@/components/Booking";
 import Gallery from "@/components/Gallery";
 import Services from "@/components/Services";
 import Location from "@/components/Location";
+import Reviews from "@/components/Reviews";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Booking />
       <Gallery />
       <Services />
+      <Reviews />
       <Location />
       <Contact />
     </main>
