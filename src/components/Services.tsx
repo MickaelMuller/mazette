@@ -1,6 +1,3 @@
-import { Scissors, Sparkles, Palette, Crown } from "lucide-react";
-import { ReactNode } from "react";
-
 interface ServiceItem {
   name: string;
   duration: string;
@@ -8,7 +5,6 @@ interface ServiceItem {
 }
 
 interface ServiceCategory {
-  icon: ReactNode;
   title: string;
   color: string;
   items: ServiceItem[];
@@ -16,7 +12,6 @@ interface ServiceCategory {
 
 const categories: ServiceCategory[] = [
   {
-    icon: <Scissors className="w-7 h-7" />,
     title: "Coupes",
     color: "bg-rose-500",
     items: [
@@ -27,7 +22,6 @@ const categories: ServiceCategory[] = [
     ],
   },
   {
-    icon: <Sparkles className="w-7 h-7" />,
     title: "Mise en Forme",
     color: "bg-purple-500",
     items: [
@@ -40,7 +34,6 @@ const categories: ServiceCategory[] = [
     ],
   },
   {
-    icon: <Crown className="w-7 h-7" />,
     title: "Forfaits",
     color: "bg-emerald-500",
     items: [
@@ -49,7 +42,6 @@ const categories: ServiceCategory[] = [
     ],
   },
   {
-    icon: <Palette className="w-7 h-7" />,
     title: "Techniques",
     color: "bg-amber-400",
     items: [
@@ -86,14 +78,9 @@ export default function Services() {
               key={category.title}
               className="bg-white rounded-3xl p-8 hover:shadow-xl transition-all duration-300"
             >
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 bg-beige rounded-2xl flex items-center justify-center text-violet">
-                  {category.icon}
-                </div>
-                <h3 className="text-xl font-bold text-violet">
-                  {category.title}
-                </h3>
-              </div>
+              <h3 className="text-xl font-bold text-violet mb-6">
+                {category.title}
+              </h3>
 
               <div className="space-y-4">
                 {category.items.map((item) => (
