@@ -2,12 +2,12 @@ import Image from "next/image";
 import { Clock, ExternalLink } from "lucide-react";
 
 const horaires = [
-  { jour: "Lundi", heures: "Ferme", isClosed: true },
-  { jour: "Mardi", heures: "9h00 - 19h00", isClosed: false },
-  { jour: "Mercredi", heures: "9h00 - 19h00", isClosed: false },
-  { jour: "Jeudi", heures: "9h00 - 19h00", isClosed: false },
-  { jour: "Vendredi", heures: "9h00 - 19h00", isClosed: false },
-  { jour: "Samedi", heures: "9h00 - 19h00", isClosed: false },
+  { jour: "Lundi", heures: "9h - 18h", isClosed: false },
+  { jour: "Mardi", heures: "9h - 20h", isClosed: false },
+  { jour: "Mercredi", heures: "9h - 18h", isClosed: false },
+  { jour: "Jeudi", heures: "9h - 20h", isClosed: false },
+  { jour: "Vendredi", heures: "9h - 17h30", isClosed: false },
+  { jour: "Samedi", heures: "Ferme", isClosed: true },
   { jour: "Dimanche", heures: "Ferme", isClosed: true },
 ];
 
@@ -111,7 +111,7 @@ export default function Booking() {
             </div>
 
             <a
-              href="https://www.planity.com/mazette-coiffure-33000-bordeaux"
+              href="https://www.planity.com/mazette-33300-bordeaux"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 w-full bg-orange text-white py-4 rounded-full font-bold text-lg hover:bg-orange-light transition-colors"

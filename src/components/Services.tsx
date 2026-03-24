@@ -1,33 +1,66 @@
-import { Scissors, Palette, Sparkles, Crown } from "lucide-react";
+import { Scissors, Sparkles, Palette, Crown } from "lucide-react";
+import { ReactNode } from "react";
 
-const services = [
+interface ServiceItem {
+  name: string;
+  duration: string;
+  price: string;
+}
+
+interface ServiceCategory {
+  icon: ReactNode;
+  title: string;
+  color: string;
+  items: ServiceItem[];
+}
+
+const categories: ServiceCategory[] = [
   {
     icon: <Scissors className="w-7 h-7" />,
-    title: "Coupe",
-    description:
-      "Coupe personnalisee selon votre style, votre texture et votre personnalite.",
-    price: "Des 35€",
-  },
-  {
-    icon: <Palette className="w-7 h-7" />,
-    title: "Coloration",
-    description:
-      "Balayage, meches, couleur uniforme, ombre... Toutes les techniques tendance.",
-    price: "Des 60€",
+    title: "Coupes",
+    color: "bg-rose-500",
+    items: [
+      { name: "Courte Tondeuse", duration: "30min", price: "32€ - 35€" },
+      { name: "Cheveux Courts", duration: "45min", price: "40€ - 50€" },
+      { name: "Cheveux Mi-Longs", duration: "1h", price: "63€ - 70€" },
+      { name: "Cheveux Longs", duration: "1h15", price: "75€ - 80€" },
+    ],
   },
   {
     icon: <Sparkles className="w-7 h-7" />,
-    title: "Soins",
-    description:
-      "Masques nutritifs, soins keratine, reconstruction pour des cheveux sublimes.",
-    price: "Des 25€",
+    title: "Mise en Forme",
+    color: "bg-purple-500",
+    items: [
+      { name: "Mise en forme", duration: "30min", price: "30€" },
+      {
+        name: "Mise en forme EXTRA (fer ou boucleur)",
+        duration: "45min",
+        price: "40€",
+      },
+    ],
   },
   {
     icon: <Crown className="w-7 h-7" />,
-    title: "Coiffage",
-    description:
-      "Brushing, chignons, mises en plis pour vos evenements et occasions speciales.",
-    price: "Des 40€",
+    title: "Forfaits",
+    color: "bg-emerald-500",
+    items: [
+      { name: "Couleur + Coupe", duration: "2h", price: "90€ - 160€" },
+      { name: "Vernis + Coupe", duration: "1h30", price: "90€ - 160€" },
+    ],
+  },
+  {
+    icon: <Palette className="w-7 h-7" />,
+    title: "Techniques",
+    color: "bg-amber-400",
+    items: [
+      { name: "Le Balayage", duration: "3h45", price: "200€ - 240€" },
+      {
+        name: "La Reprise Du Balayage",
+        duration: "2h45",
+        price: "160€ - 190€",
+      },
+      { name: "Le Projet Creatif", duration: "5h", price: "Sur devis" },
+    ],
   },
 ];
 
@@ -40,30 +73,52 @@ export default function Services() {
             Prestations
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-violet mt-2">
-            Nos Services
+            Nos Tarifs
           </h2>
           <p className="text-foreground/60 mt-4 max-w-xl mx-auto text-lg">
             Des prestations sur-mesure pour sublimer chaque chevelure.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service) => (
+        <div className="grid md:grid-cols-2 gap-6">
+          {categories.map((category) => (
             <div
-              key={service.title}
-              className="bg-white rounded-3xl p-8 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1"
+              key={category.title}
+              className="bg-white rounded-3xl p-8 hover:shadow-xl transition-all duration-300"
             >
-              <div className="w-14 h-14 bg-beige rounded-2xl flex items-center justify-center text-violet mb-6 group-hover:bg-orange group-hover:text-white transition-colors duration-300">
-                {service.icon}
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-14 h-14 bg-beige rounded-2xl flex items-center justify-center text-violet">
+                  {category.icon}
+                </div>
+                <h3 className="text-xl font-bold text-violet">
+                  {category.title}
+                </h3>
               </div>
-              <h3 className="text-xl font-bold text-violet mb-3">
-                {service.title}
-              </h3>
-              <p className="text-foreground/60 mb-6 leading-relaxed">
-                {service.description}
-              </p>
-              <div className="text-orange font-bold text-lg">
-                {service.price}
+
+              <div className="space-y-4">
+                {category.items.map((item) => (
+                  <div
+                    key={item.name}
+                    className="flex items-center justify-between gap-4 pb-4 border-b border-beige last:border-0 last:pb-0"
+                  >
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2">
+                        <span
+                          className={`w-2.5 h-2.5 rounded-sm ${category.color} shrink-0`}
+                        />
+                        <span className="font-medium text-foreground/80 truncate">
+                          {item.name}
+                        </span>
+                      </div>
+                      <span className="text-foreground/40 text-sm ml-[18px]">
+                        {item.duration}
+                      </span>
+                    </div>
+                    <span className="text-orange font-bold whitespace-nowrap">
+                      {item.price}
+                    </span>
+                  </div>
+                ))}
               </div>
             </div>
           ))}
@@ -78,7 +133,7 @@ export default function Services() {
             style qui vous correspond. Nos experts sont la pour vous conseiller.
           </p>
           <a
-            href="https://www.planity.com/mazette-coiffure-33000-bordeaux"
+            href="https://www.planity.com/mazette-33300-bordeaux"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-orange text-white px-8 py-4 rounded-full font-bold hover:bg-orange-light transition-colors"

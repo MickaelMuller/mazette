@@ -33,7 +33,7 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="https://www.planity.com/mazette-coiffure-33000-bordeaux"
+              href="https://www.planity.com/mazette-33300-bordeaux"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-orange text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-orange-light transition-colors text-center"
@@ -55,8 +55,8 @@ export default function Hero() {
             </div>
             <div className="w-px h-12 bg-white/20" />
             <div className="text-center">
-              <div className="text-3xl font-black text-orange">Mar-Sam</div>
-              <div className="text-beige/70 text-sm">9h - 19h</div>
+              <div className="text-3xl font-black text-orange">Lun-Ven</div>
+              <div className="text-beige/70 text-sm">9h - 20h</div>
             </div>
           </div>
         </div>

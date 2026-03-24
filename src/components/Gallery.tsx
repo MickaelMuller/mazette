@@ -74,7 +74,7 @@ export default function Gallery() {
 
         <div className="text-center mt-12">
           <a
-            href="https://instagram.com/mazette_coiffure"
+            href="https://www.instagram.com/mazettenotredame/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-violet text-white px-8 py-4 rounded-full font-semibold hover:bg-violet-light transition-colors"

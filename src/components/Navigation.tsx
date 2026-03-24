@@ -60,14 +60,14 @@ export default function Navigation() {
 
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:0556000000"
+              href="tel:0556047617"
               className="flex items-center gap-2 text-foreground/70 hover:text-violet transition-colors"
             >
               <Phone className="w-4 h-4" />
-              <span className="font-medium">05 56 XX XX XX</span>
+              <span className="font-medium">05 56 04 76 17</span>
             </a>
             <a
-              href="https://www.planity.com/mazette-coiffure-33000-bordeaux"
+              href="https://www.planity.com/mazette-33300-bordeaux"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-violet text-white px-6 py-2.5 rounded-full font-semibold hover:bg-violet-light transition-colors"
@@ -103,14 +103,14 @@ export default function Navigation() {
               ))}
               <div className="px-6 pt-4 border-t border-beige space-y-3">
                 <a
-                  href="tel:0556000000"
+                  href="tel:0556047617"
                   className="flex items-center gap-2 text-foreground/70 hover:text-violet transition-colors"
                 >
                   <Phone className="w-4 h-4" />
-                  <span className="font-medium">05 56 XX XX XX</span>
+                  <span className="font-medium">05 56 04 76 17</span>
                 </a>
                 <a
-                  href="https://www.planity.com/mazette-coiffure-33000-bordeaux"
+                  href="https://www.planity.com/mazette-33300-bordeaux"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-violet text-white px-6 py-3 rounded-full font-semibold hover:bg-violet-light transition-colors text-center"

@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Instagram } from "lucide-react";
+import { Phone, MapPin, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -17,13 +17,13 @@ export default function Footer() {
               Bordeaux, quartier Notre-Dame.
             </p>
             <a
-              href="https://instagram.com/mazette_coiffure"
+              href="https://www.instagram.com/mazettenotredame/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 mt-6 text-white/60 hover:text-orange transition-colors"
             >
               <Instagram className="w-5 h-5" />
-              @mazette_coiffure
+              @mazettenotredame
             </a>
           </div>
 
@@ -31,23 +31,17 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-6">Contact</h3>
             <div className="space-y-4 text-white/60">
               <a
-                href="tel:0556000000"
+                href="tel:0556047617"
                 className="flex items-center gap-3 hover:text-orange transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                05 56 XX XX XX
+                05 56 04 76 17
               </a>
-              <a
-                href="mailto:contact@mazette-coiffure.fr"
-                className="flex items-center gap-3 hover:text-orange transition-colors"
-              >
-                <Mail className="w-4 h-4" />
-                contact@mazette-coiffure.fr
-              </a>
+
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-0.5" />
                 <span>
-                  123 Rue Notre-Dame
+                  130 Rue Notre-Dame
                   <br />
                   33000 Bordeaux
                 </span>
@@ -59,16 +53,32 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-6">Horaires</h3>
             <div className="space-y-2 text-white/60 text-sm">
               <div className="flex justify-between">
-                <span>Mar - Sam</span>
-                <span className="text-white">9h00 - 19h00</span>
+                <span>Lundi</span>
+                <span className="text-white">9h - 18h</span>
               </div>
               <div className="flex justify-between">
-                <span>Dim - Lun</span>
+                <span>Mardi</span>
+                <span className="text-white">9h - 20h</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Mercredi</span>
+                <span className="text-white">9h - 18h</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Jeudi</span>
+                <span className="text-white">9h - 20h</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Vendredi</span>
+                <span className="text-white">9h - 17h30</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Sam - Dim</span>
                 <span className="text-white/40">Ferme</span>
               </div>
             </div>
             <a
-              href="https://www.planity.com/mazette-coiffure-33000-bordeaux"
+              href="https://www.planity.com/mazette-33300-bordeaux"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-8 bg-orange text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-light transition-colors text-sm"
