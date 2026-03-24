@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import DiscoBall from "@/components/DiscoBall";
 
 const realisations = [
   { src: "/images/femme1.jpeg", alt: "Boucles dorees" },
@@ -240,50 +241,12 @@ export default function Gallery() {
       <div className="absolute bottom-0 right-1/4 w-[300px] h-[300px] bg-orange/15 rounded-full blur-[100px]" />
       <div className="absolute top-1/2 left-1/4 w-[200px] h-[200px] bg-violet-light/20 rounded-full blur-[80px]" />
 
-      <div className="absolute top-0 right-8 md:right-16 z-10 flex flex-col items-center">
-        <div className="w-px h-4 md:h-8 bg-gradient-to-b from-white/10 to-white/30" />
-        <div className="relative">
-          <div
-            className="absolute rounded-full animate-disco-rays opacity-[0.07]"
-            style={{
-              inset: "-600px",
-              background:
-                "conic-gradient(from 0deg, transparent 0deg, rgba(255,255,255,0.7) 1.5deg, transparent 3deg, transparent 15deg, rgba(239,125,21,0.5) 16.5deg, transparent 18deg, transparent 30deg, rgba(255,255,255,0.6) 31.5deg, transparent 33deg, transparent 45deg, rgba(122,74,130,0.5) 46.5deg, transparent 48deg, transparent 60deg, rgba(255,255,255,0.7) 61.5deg, transparent 63deg, transparent 75deg, rgba(239,125,21,0.5) 76.5deg, transparent 78deg, transparent 90deg, rgba(255,255,255,0.6) 91.5deg, transparent 93deg, transparent 105deg, rgba(122,74,130,0.5) 106.5deg, transparent 108deg, transparent 120deg, rgba(255,255,255,0.7) 121.5deg, transparent 123deg, transparent 135deg, rgba(239,125,21,0.5) 136.5deg, transparent 138deg, transparent 150deg, rgba(255,255,255,0.6) 151.5deg, transparent 153deg, transparent 165deg, rgba(122,74,130,0.5) 166.5deg, transparent 168deg, transparent 180deg, rgba(255,255,255,0.7) 181.5deg, transparent 183deg, transparent 195deg, rgba(239,125,21,0.5) 196.5deg, transparent 198deg, transparent 210deg, rgba(255,255,255,0.6) 211.5deg, transparent 213deg, transparent 225deg, rgba(122,74,130,0.5) 226.5deg, transparent 228deg, transparent 240deg, rgba(255,255,255,0.7) 241.5deg, transparent 243deg, transparent 255deg, rgba(239,125,21,0.5) 256.5deg, transparent 258deg, transparent 270deg, rgba(255,255,255,0.6) 271.5deg, transparent 273deg, transparent 285deg, rgba(122,74,130,0.5) 286.5deg, transparent 288deg, transparent 300deg, rgba(255,255,255,0.7) 301.5deg, transparent 303deg, transparent 315deg, rgba(239,125,21,0.5) 316.5deg, transparent 318deg, transparent 330deg, rgba(255,255,255,0.6) 331.5deg, transparent 333deg, transparent 345deg, rgba(122,74,130,0.5) 346.5deg, transparent 348deg)",
-            }}
-          />
-
-          <div className="relative w-16 h-16 md:w-24 md:h-24 rounded-full overflow-hidden shadow-[0_0_40px_rgba(255,255,255,0.15)]">
-            <div
-              className="absolute inset-0 rounded-full"
-              style={{
-                background:
-                  "radial-gradient(ellipse at 35% 30%, #e8e8e8 0%, #b8b8b8 20%, #888 45%, #666 70%, #444 100%)",
-              }}
-            />
-            <div
-              className="absolute inset-0 rounded-full animate-disco-ball-spin"
-              style={{
-                backgroundImage:
-                  "repeating-linear-gradient(0deg, transparent, transparent 5px, rgba(0,0,0,0.15) 5px, rgba(0,0,0,0.15) 6px), repeating-linear-gradient(90deg, transparent, transparent 5px, rgba(0,0,0,0.15) 5px, rgba(0,0,0,0.15) 6px)",
-              }}
-            />
-            <div
-              className="absolute inset-0 rounded-full animate-disco-shimmer"
-              style={{
-                background:
-                  "radial-gradient(circle at 25% 20%, rgba(255,255,255,0.9) 0%, transparent 12%), radial-gradient(circle at 65% 30%, rgba(255,255,255,0.6) 0%, transparent 8%), radial-gradient(circle at 40% 70%, rgba(255,255,255,0.4) 0%, transparent 10%), radial-gradient(circle at 80% 55%, rgba(255,255,255,0.7) 0%, transparent 9%)",
-              }}
-            />
-            <div
-              className="absolute inset-0 rounded-full"
-              style={{
-                background:
-                  "radial-gradient(ellipse at 35% 25%, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.05) 40%, transparent 70%)",
-              }}
-            />
-          </div>
-        </div>
-      </div>
+      <DiscoBall id="right" className="absolute top-12 right-8 md:right-16" />
+      <DiscoBall
+        id="left"
+        reverse
+        className="absolute top-12 left-8 md:left-16"
+      />
 
       {SPARKLES.map((sparkle, i) => (
         <div
