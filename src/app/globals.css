@@ -102,35 +102,17 @@ html {
   animation: disco-pulse 2s ease-in-out infinite;
 }
 
-@keyframes disco-ball-spin {
+@keyframes disco-rotate {
   from {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
-.animate-disco-ball-spin {
-  animation: disco-ball-spin 15s linear infinite;
-}
-
-.animate-disco-rays {
-  animation: disco-ball-spin 12s linear infinite;
-}
-
-@keyframes disco-shimmer {
-  0%,
-  100% {
-    opacity: 0.6;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-.animate-disco-shimmer {
-  animation: disco-shimmer 2.5s ease-in-out infinite;
+.animate-disco-rotate {
+  animation: disco-rotate 20s linear infinite;
 }
 
 :root {
