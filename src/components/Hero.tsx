@@ -21,9 +21,9 @@ export default function Hero() {
               <span className="w-2 h-2 bg-orange rounded-full animate-pulse" />
               Bordeaux - Quartier Notre-Dame
             </div>
-            <h1 className="text-6xl md:text-8xl font-black text-white leading-none">
+            <h1 className="text-6xl md:text-8xl font-black text-orange leading-none">
               Mazette
-              <span className="block text-orange">Coiffure</span>
+              <span className="block text-white">Coiffure</span>
             </h1>
             <p className="text-xl text-beige/90 leading-relaxed max-w-lg">
               Un salon chaleureux et creatif au coeur de Bordeaux. Venez comme

@@ -1,4 +1,5 @@
 import { Phone, MapPin, Instagram } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,10 +8,13 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12">
           <div>
             <div className="mb-6">
-              <span className="text-3xl font-black">Mazette</span>
-              <span className="text-orange ml-2 text-sm font-medium uppercase tracking-widest">
-                Coiffure
-              </span>
+              <Image
+                src="/images/logo-mazette.svg"
+                alt="Mazette Coiffure"
+                width={160}
+                height={50}
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-white/60 leading-relaxed">
               Votre salon de coiffure chaleureux et creatif au coeur de

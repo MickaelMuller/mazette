@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
+import Image from "next/image";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,19 +31,15 @@ export default function Navigation() {
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
-          <a href="#" className="flex items-center gap-2">
-            <span
-              className="text-3xl font-black tracking-tight"
-              style={{ color: "#582c5f" }}
-            >
-              Mazette
-            </span>
-            <span
-              className="text-sm font-medium uppercase tracking-widest"
-              style={{ color: "#ef7d15" }}
-            >
-              Coiffure
-            </span>
+          <a href="#" className="flex items-center">
+            <Image
+              src="/images/logo-mazette.svg"
+              alt="Mazette Coiffure"
+              width={160}
+              height={50}
+              className="h-10 w-auto"
+              priority
+            />
           </a>
 
           <div className="hidden md:flex items-center gap-8">
