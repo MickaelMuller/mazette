@@ -58,8 +58,8 @@ const categories: ServiceCategory[] = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 bg-beige-light">
-      <div className="container mx-auto px-6">
+    <section id="services" className="py-24 bg-beige-light overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
           <span className="text-orange font-semibold uppercase tracking-widest text-sm">
             Prestations
@@ -76,7 +76,7 @@ export default function Services() {
           {categories.map((category) => (
             <div
               key={category.title}
-              className="bg-white rounded-3xl p-8 hover:shadow-xl transition-all duration-300"
+              className="bg-white rounded-3xl p-5 sm:p-8 hover:shadow-xl transition-all duration-300 overflow-hidden"
             >
               <h3 className="text-xl font-bold text-violet mb-6">
                 {category.title}
@@ -86,7 +86,7 @@ export default function Services() {
                 {category.items.map((item) => (
                   <div
                     key={item.name}
-                    className="flex items-center justify-between gap-4 pb-4 border-b border-beige last:border-0 last:pb-0"
+                    className="flex items-center justify-between gap-2 sm:gap-4 pb-4 border-b border-beige last:border-0 last:pb-0"
                   >
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2">
@@ -101,7 +101,7 @@ export default function Services() {
                         {item.duration}
                       </span>
                     </div>
-                    <span className="text-orange font-bold whitespace-nowrap">
+                    <span className="text-orange font-bold text-right text-sm sm:text-base shrink-0">
                       {item.price}
                     </span>
                   </div>
