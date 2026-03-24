@@ -1,44 +1,59 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { Menu, X, Scissors, Phone, Calendar } from 'lucide-react'
+import { useState, useEffect } from "react";
+import { Menu, X, Phone } from "lucide-react";
 
 export default function Navigation() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navLinks = [
-    { href: '#services', label: 'Services' },
-    { href: '#gallery', label: 'Galerie' },
-    { href: '#booking', label: 'Réservation' },
-    { href: '#location', label: 'Localisation' },
-    { href: '#contact', label: 'Contact' },
-  ]
+    { href: "#salon", label: "Le Salon" },
+    { href: "#realisations", label: "Realisations" },
+    { href: "#services", label: "Services" },
+    { href: "#contact", label: "Contact" },
+  ];
+
+  const scrolledBg = isScrolled
+    ? "bg-white/95 backdrop-blur-sm shadow-md"
+    : "bg-transparent";
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center">
-              <Scissors className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <div className="font-bold text-gray-900 text-lg">Mazette</div>
-              <div className="text-pink-600 text-sm font-medium">Coiffure</div>
-            </div>
-          </div>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolledBg}`}
+    >
+      <div className="container mx-auto px-6">
+        <div className="flex items-center justify-between h-20">
+          <a href="#" className="flex items-center gap-2">
+            <span
+              className="text-3xl font-black tracking-tight"
+              style={{ color: "#582c5f" }}
+            >
+              Mazette
+            </span>
+            <span
+              className="text-sm font-medium uppercase tracking-widest"
+              style={{ color: "#ef7d15" }}
+            >
+              Coiffure
+            </span>
+          </a>
 
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 hover:text-pink-600 font-medium transition-colors"
-                onClick={() => setIsMenuOpen(false)}
+                className="text-foreground/70 hover:text-violet font-medium transition-colors relative group"
               >
                 {link.label}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
           </div>
@@ -46,56 +61,62 @@ export default function Navigation() {
           <div className="hidden md:flex items-center gap-4">
             <a
               href="tel:0556000000"
-              className="flex items-center gap-2 text-gray-700 hover:text-pink-600 transition-colors"
+              className="flex items-center gap-2 text-foreground/70 hover:text-violet transition-colors"
             >
               <Phone className="w-4 h-4" />
               <span className="font-medium">05 56 XX XX XX</span>
             </a>
             <a
-              href="#booking"
-              className="bg-pink-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-pink-700 transition-colors flex items-center gap-2"
+              href="https://www.planity.com/mazette-coiffure-33000-bordeaux"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-violet text-white px-6 py-2.5 rounded-full font-semibold hover:bg-violet-light transition-colors"
             >
-              <Calendar className="w-4 h-4" />
-              Réserver
+              Reserver
             </a>
           </div>
 
           <button
-            onClick={toggleMenu}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden p-2 rounded-lg hover:bg-beige transition-colors"
           >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden border-t border-gray-100">
-            <div className="py-4 space-y-4">
+          <div className="md:hidden bg-white rounded-2xl shadow-xl mb-4 overflow-hidden">
+            <div className="py-4 space-y-1">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
-                  className="block px-4 py-2 text-gray-700 hover:text-pink-600 hover:bg-gray-50 rounded-lg font-medium transition-colors"
+                  className="block px-6 py-3 text-foreground/80 hover:text-violet hover:bg-beige-light font-medium transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}
                 </a>
               ))}
-              <div className="px-4 pt-4 border-t border-gray-100 space-y-3">
+              <div className="px-6 pt-4 border-t border-beige space-y-3">
                 <a
                   href="tel:0556000000"
-                  className="flex items-center gap-2 text-gray-700 hover:text-pink-600 transition-colors"
+                  className="flex items-center gap-2 text-foreground/70 hover:text-violet transition-colors"
                 >
                   <Phone className="w-4 h-4" />
                   <span className="font-medium">05 56 XX XX XX</span>
                 </a>
                 <a
-                  href="#booking"
-                  className="w-full bg-pink-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-pink-700 transition-colors flex items-center justify-center gap-2"
+                  href="https://www.planity.com/mazette-coiffure-33000-bordeaux"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-violet text-white px-6 py-3 rounded-full font-semibold hover:bg-violet-light transition-colors text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  <Calendar className="w-4 h-4" />
-                  Réserver
+                  Reserver
                 </a>
               </div>
             </div>
@@ -103,5 +124,5 @@ export default function Navigation() {
         )}
       </div>
     </nav>
-  )
+  );
 }

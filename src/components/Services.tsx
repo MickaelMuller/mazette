@@ -1,127 +1,92 @@
-import { Scissors, Palette, Sparkles, Heart, Crown, Droplets } from 'lucide-react'
+import { Scissors, Palette, Sparkles, Crown } from "lucide-react";
 
 const services = [
   {
-    icon: <Scissors className="w-8 h-8" />,
+    icon: <Scissors className="w-7 h-7" />,
     title: "Coupe",
-    description: "Coupe personnalisée selon votre style et morphologie",
-    price: "À partir de 35€",
-    features: ["Consultation style", "Shampoing inclus", "Coiffage"]
+    description:
+      "Coupe personnalisee selon votre style, votre texture et votre personnalite.",
+    price: "Des 35€",
   },
   {
-    icon: <Palette className="w-8 h-8" />,
+    icon: <Palette className="w-7 h-7" />,
     title: "Coloration",
-    description: "Couleurs tendance et techniques de pointe",
-    price: "À partir de 60€",
-    features: ["Balayage", "Mèches", "Couleur uniforme", "Soins colorants"]
+    description:
+      "Balayage, meches, couleur uniforme, ombre... Toutes les techniques tendance.",
+    price: "Des 60€",
   },
   {
-    icon: <Sparkles className="w-8 h-8" />,
+    icon: <Sparkles className="w-7 h-7" />,
     title: "Soins",
-    description: "Traitements réparateurs pour cheveux abîmés",
-    price: "À partir de 25€",
-    features: ["Masques nutritifs", "Soins kératine", "Reconstruction"]
+    description:
+      "Masques nutritifs, soins keratine, reconstruction pour des cheveux sublimes.",
+    price: "Des 25€",
   },
   {
-    icon: <Crown className="w-8 h-8" />,
+    icon: <Crown className="w-7 h-7" />,
     title: "Coiffage",
-    description: "Mise en plis pour occasions spéciales",
-    price: "À partir de 40€",
-    features: ["Mariages", "Événements", "Brushing", "Chignons"]
+    description:
+      "Brushing, chignons, mises en plis pour vos evenements et occasions speciales.",
+    price: "Des 40€",
   },
-  {
-    icon: <Heart className="w-8 h-8" />,
-    title: "Soins du cuir chevelu",
-    description: "Traitements spécialisés pour un cuir chevelu sain",
-    price: "À partir de 30€",
-    features: ["Massage relaxant", "Soins anti-chute", "Purification"]
-  },
-  {
-    icon: <Droplets className="w-8 h-8" />,
-    title: "Lissage",
-    description: "Lissage brésilien et japonais longue durée",
-    price: "À partir de 120€",
-    features: ["Lissage brésilien", "Lissage japonais", "Durée 6 mois"]
-  }
-]
+];
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="services" className="py-24 bg-beige-light">
+      <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <span className="text-orange font-semibold uppercase tracking-widest text-sm">
+            Prestations
+          </span>
+          <h2 className="text-4xl md:text-5xl font-black text-violet mt-2">
             Nos Services
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Découvrez notre gamme complète de services de coiffure, 
-            adaptés à tous vos besoins et envies.
+          <p className="text-foreground/60 mt-4 max-w-xl mx-auto text-lg">
+            Des prestations sur-mesure pour sublimer chaque chevelure.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <div 
-              key={index}
-              className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-6 hover:shadow-xl transition-shadow duration-300"
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {services.map((service) => (
+            <div
+              key={service.title}
+              className="bg-white rounded-3xl p-8 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1"
             >
-              <div className="text-pink-600 mb-4">
+              <div className="w-14 h-14 bg-beige rounded-2xl flex items-center justify-center text-violet mb-6 group-hover:bg-orange group-hover:text-white transition-colors duration-300">
                 {service.icon}
               </div>
-              
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
+              <h3 className="text-xl font-bold text-violet mb-3">
                 {service.title}
               </h3>
-              
-              <p className="text-gray-600 mb-4">
+              <p className="text-foreground/60 mb-6 leading-relaxed">
                 {service.description}
               </p>
-              
-              <div className="text-pink-600 font-bold text-lg mb-4">
+              <div className="text-orange font-bold text-lg">
                 {service.price}
               </div>
-              
-              <ul className="space-y-2">
-                {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="text-gray-600 text-sm flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-pink-400 rounded-full"></div>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-
-              <button className="w-full mt-6 bg-pink-600 text-white py-3 rounded-full font-semibold hover:bg-pink-700 transition-colors">
-                Réserver
-              </button>
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Forfaits & Packages
-            </h3>
-            <p className="text-gray-600 mb-6">
-              Économisez avec nos forfaits combinés coupe + couleur + soins
-            </p>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-xl p-6">
-                <h4 className="font-bold text-gray-900 mb-2">Package Éclat</h4>
-                <p className="text-gray-600 mb-4">Coupe + Couleur + Soin</p>
-                <div className="text-pink-600 font-bold text-2xl">120€</div>
-                <div className="text-gray-500 line-through">140€</div>
-              </div>
-              <div className="bg-white rounded-xl p-6">
-                <h4 className="font-bold text-gray-900 mb-2">Package Luxe</h4>
-                <p className="text-gray-600 mb-4">Coupe + Balayage + Soins + Coiffage</p>
-                <div className="text-pink-600 font-bold text-2xl">180€</div>
-                <div className="text-gray-500 line-through">210€</div>
-              </div>
-            </div>
-          </div>
+        <div className="mt-16 bg-violet rounded-3xl p-8 md:p-12 text-center text-white">
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            Premiere visite ?
+          </h3>
+          <p className="text-beige/80 mb-8 max-w-2xl mx-auto text-lg">
+            Beneficiez d&apos;une consultation gratuite pour definir ensemble le
+            style qui vous correspond. Nos experts sont la pour vous conseiller.
+          </p>
+          <a
+            href="https://www.planity.com/mazette-coiffure-33000-bordeaux"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-orange text-white px-8 py-4 rounded-full font-bold hover:bg-orange-light transition-colors"
+          >
+            Reserver ma consultation
+          </a>
         </div>
       </div>
     </section>
-  )
+  );
 }
