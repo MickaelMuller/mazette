@@ -69,3 +69,64 @@ html {
 .animate-sparkle {
   animation: sparkle 2s ease-in-out infinite;
 }
+
+@keyframes disco-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.animate-disco-border {
+  animation: disco-border 3s linear infinite;
+}
+
+@keyframes disco-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 20px rgba(239, 125, 21, 0.2),
+      0 0 60px rgba(88, 44, 95, 0.15);
+  }
+  50% {
+    box-shadow:
+      0 0 40px rgba(239, 125, 21, 0.4),
+      0 0 80px rgba(88, 44, 95, 0.3),
+      0 0 120px rgba(122, 74, 130, 0.15);
+  }
+}
+
+.animate-disco-pulse {
+  animation: disco-pulse 2s ease-in-out infinite;
+}
+
+@keyframes disco-rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.animate-disco-rotate {
+  animation: disco-rotate 20s linear infinite;
+}
+
+:root {
+  --carousel-gap: 160px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --carousel-gap: 220px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --carousel-gap: 260px;
+  }
+}
