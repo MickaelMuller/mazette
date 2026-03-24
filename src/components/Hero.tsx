@@ -21,13 +21,18 @@ export default function Hero() {
               <span className="w-2 h-2 bg-orange rounded-full animate-pulse" />
               Bordeaux - Quartier Notre-Dame
             </div>
-            <h1 className="text-6xl md:text-8xl font-black text-orange leading-none">
-              Mazette
-              <span className="block text-white">Coiffure</span>
+            <h1>
+              <Image
+                src="/images/logo-mazette.svg"
+                alt="Mazette Coiffure"
+                width={400}
+                height={125}
+                priority
+              />
             </h1>
             <p className="text-xl text-beige/90 leading-relaxed max-w-lg">
-              Un salon chaleureux et creatif au coeur de Bordeaux. Venez comme
-              vous etes, repartez comme vous revez.
+              Notre salon est un lieu ouvert et bienveillant, où chacun·e est
+              accueilli·e avec simplicité et attention.
             </p>
           </div>
 
@@ -50,7 +55,7 @@ export default function Hero() {
 
           <div className="flex items-center gap-8 pt-4">
             <div className="text-center">
-              <div className="text-3xl font-black text-orange">25+</div>
+              <div className="text-3xl font-black text-orange">10+</div>
               <div className="text-beige/70 text-sm">ans d&apos;experience</div>
             </div>
             <div className="w-px h-12 bg-white/20" />
