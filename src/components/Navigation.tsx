@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,7 +32,7 @@ export default function Navigation() {
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
-          <a href="/" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Image
               src="/images/logo-mazette.svg"
               alt="Mazette Coiffure"
@@ -40,7 +41,7 @@ export default function Navigation() {
               className="h-10 w-auto"
               priority
             />
-          </a>
+          </Link>
 
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
@@ -63,12 +64,12 @@ export default function Navigation() {
               <Phone className="w-4 h-4" />
               <span className="font-medium">05 56 04 76 17</span>
             </a>
-            <a
+            <Link
               href="/reservation"
               className="bg-violet text-white px-6 py-2.5 rounded-full font-semibold hover:bg-violet-light transition-colors"
             >
               Reserver
-            </a>
+            </Link>
           </div>
 
           <button
@@ -104,13 +105,13 @@ export default function Navigation() {
                   <Phone className="w-4 h-4" />
                   <span className="font-medium">05 56 04 76 17</span>
                 </a>
-                <a
+                <Link
                   href="/reservation"
                   className="block w-full bg-violet text-white px-6 py-3 rounded-full font-semibold hover:bg-violet-light transition-colors text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Reserver
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -37,12 +38,12 @@ export default function Hero() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <a
+            <Link
               href="/reservation"
               className="bg-orange text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-orange-light transition-colors text-center"
             >
               Prendre rendez-vous
-            </a>
+            </Link>
             <a
               href="#salon"
               className="border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition-colors text-center backdrop-blur-sm"

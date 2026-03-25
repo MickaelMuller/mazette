@@ -1,5 +1,6 @@
 import { Phone, MapPin, Instagram } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -81,12 +82,12 @@ export default function Footer() {
                 <span className="text-white/40">Ferme</span>
               </div>
             </div>
-            <a
+            <Link
               href="/reservation"
               className="inline-block mt-8 bg-orange text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-light transition-colors text-sm"
             >
               Reserver en ligne
-            </a>
+            </Link>
           </div>
         </div>
 
