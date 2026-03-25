@@ -130,3 +130,173 @@ html {
     --carousel-gap: 260px;
   }
 }
+
+/* Planity widget overrides */
+#planity {
+  font-family: var(--font-inter), sans-serif !important;
+}
+
+#planity .planityWidget {
+  background-color: transparent !important;
+}
+
+/* Nav tabs container */
+#planity .planity-widget-nav {
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Force nav parent to row layout */
+#planity [class*="css-"]:has(> .planity-widget-nav) {
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+
+/* Nav buttons equal size */
+#planity [class*="button-module_medium"] {
+  flex: 1 !important;
+  min-width: 0 !important;
+  white-space: nowrap !important;
+  font-size: 0.85rem !important;
+  padding: 0.6rem 1rem !important;
+  height: auto !important;
+  line-height: 1.4 !important;
+  box-sizing: border-box !important;
+}
+
+#planity [class*="button-module_primary"][class*="button-module_medium"] {
+  background-color: var(--violet) !important;
+  border: 2px solid var(--violet) !important;
+  border-radius: 9999px !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+#planity [class*="button-module_secondary"][class*="button-module_medium"] {
+  background-color: transparent !important;
+  border: 2px solid var(--beige-dark) !important;
+  border-radius: 9999px !important;
+  color: var(--violet) !important;
+  font-weight: 600 !important;
+}
+
+#planity
+  [class*="button-module_secondary"][class*="button-module_medium"]:hover {
+  background-color: var(--beige) !important;
+}
+
+/* Category headers (DEVIS, COUPES, etc.) */
+#planity [class*="service_set-module_card"] h2,
+#planity [class*="service_set-module_card"] h3 {
+  color: var(--violet) !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+}
+
+/* Service cards - only style the outer wrapper */
+#planity [class*="service_set-module_card"] {
+  background-color: white !important;
+  border-radius: 1.5rem !important;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+  padding: 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Remove duplicate card styling on inner wrapper */
+#planity [class*="service_set-module_cardWrapper"] {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* Service names */
+#planity .planity_appointment_service_cell {
+  color: var(--violet) !important;
+  font-weight: 600 !important;
+}
+
+/* Action buttons: Choisir, Reserver, etc. */
+#planity [class*="button-module_small"][class*="button-module_primary"] {
+  background-color: var(--orange) !important;
+  border: 2px solid var(--orange) !important;
+  border-radius: 9999px !important;
+  color: white !important;
+  font-weight: 600 !important;
+  transition: all 0.2s !important;
+  cursor: pointer !important;
+}
+
+#planity [class*="button-module_small"][class*="button-module_primary"]:hover {
+  background-color: var(--orange-light) !important;
+  border-color: var(--orange-light) !important;
+}
+
+/* Button labels */
+#planity [class*="button-module_label"] {
+  color: inherit !important;
+}
+
+/* Accordion layout fix */
+#planity [class*="service-module_accordion"] {
+  grid-template-rows: auto auto !important;
+  height: auto !important;
+}
+
+/* Description: 2 lines max when collapsed */
+#planity
+  [class*="service-module_accordion"][class*="isCollapsed"]
+  [class*="service-module_details"] {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  min-height: 0 !important;
+}
+
+/* Full description when expanded */
+#planity
+  [class*="service-module_accordion"]:not([class*="isCollapsed"])
+  [class*="service-module_details"] {
+  min-height: 0 !important;
+}
+
+/* Description text style */
+#planity [class*="service-module_details"] {
+  color: var(--foreground) !important;
+  opacity: 0.6 !important;
+}
+
+/* Toggle "Plus de details" */
+#planity [class*="service-module_toggle"] {
+  color: var(--violet) !important;
+  font-weight: 500 !important;
+  font-size: 0.85rem !important;
+  opacity: 0.7 !important;
+}
+
+#planity [class*="service-module_toggle"]:hover {
+  opacity: 1 !important;
+}
+
+/* Duration & price */
+#planity .planity_appointment_service_small-cell {
+  color: var(--foreground) !important;
+  opacity: 0.55 !important;
+}
+
+/* Background */
+#planity .planity_ui_appointment_background {
+  background-color: transparent !important;
+}
+
+/* Mobile: use desktop layout */
+#planity .planity_appointment_mobile_container {
+  display: contents !important;
+}

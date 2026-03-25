@@ -38,9 +38,7 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="https://www.planity.com/mazette-33300-bordeaux"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/reservation"
               className="bg-orange text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-orange-light transition-colors text-center"
             >
               Prendre rendez-vous

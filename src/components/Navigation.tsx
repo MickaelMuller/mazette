@@ -15,10 +15,10 @@ export default function Navigation() {
   }, []);
 
   const navLinks = [
-    { href: "#salon", label: "Le Salon" },
-    { href: "#realisations", label: "Realisations" },
-    { href: "#services", label: "Services" },
-    { href: "#contact", label: "Contact" },
+    { href: "/#salon", label: "Le Salon" },
+    { href: "/#realisations", label: "Realisations" },
+    { href: "/#services", label: "Services" },
+    { href: "/#contact", label: "Contact" },
   ];
 
   const scrolledBg = isScrolled
@@ -31,7 +31,7 @@ export default function Navigation() {
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
-          <a href="#" className="flex items-center">
+          <a href="/" className="flex items-center">
             <Image
               src="/images/logo-mazette.svg"
               alt="Mazette Coiffure"
@@ -64,9 +64,7 @@ export default function Navigation() {
               <span className="font-medium">05 56 04 76 17</span>
             </a>
             <a
-              href="https://www.planity.com/mazette-33300-bordeaux"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/reservation"
               className="bg-violet text-white px-6 py-2.5 rounded-full font-semibold hover:bg-violet-light transition-colors"
             >
               Reserver
@@ -107,9 +105,7 @@ export default function Navigation() {
                   <span className="font-medium">05 56 04 76 17</span>
                 </a>
                 <a
-                  href="https://www.planity.com/mazette-33300-bordeaux"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/reservation"
                   className="block w-full bg-violet text-white px-6 py-3 rounded-full font-semibold hover:bg-violet-light transition-colors text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >

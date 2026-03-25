@@ -82,9 +82,7 @@ export default function Footer() {
               </div>
             </div>
             <a
-              href="https://www.planity.com/mazette-33300-bordeaux"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/reservation"
               className="inline-block mt-8 bg-orange text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-light transition-colors text-sm"
             >
               Reserver en ligne

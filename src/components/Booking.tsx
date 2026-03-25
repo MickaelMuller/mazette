@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { Clock, ExternalLink } from "lucide-react";
+import Link from "next/link";
+import { Clock, CalendarDays } from "lucide-react";
 
 const horaires = [
   { jour: "Lundi", heures: "9h - 18h", isClosed: false },
@@ -109,17 +110,17 @@ export default function Booking() {
                 ))}
               </div>
             </div>
-
-            <a
-              href="https://www.planity.com/mazette-33300-bordeaux"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full bg-orange text-white py-4 rounded-full font-bold text-lg hover:bg-orange-light transition-colors"
-            >
-              Reserver sur Planity
-              <ExternalLink className="w-5 h-5" />
-            </a>
           </div>
+        </div>
+
+        <div className="mt-16 text-center">
+          <Link
+            href="/reservation"
+            className="inline-flex items-center justify-center gap-2 bg-orange text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-orange-light transition-colors"
+          >
+            <CalendarDays className="w-5 h-5" />
+            Reserver en ligne
+          </Link>
         </div>
       </div>
     </section>
