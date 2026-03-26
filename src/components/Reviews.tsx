@@ -40,7 +40,7 @@ export default function Reviews() {
             Temoignages
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-violet mt-2">
-            Ils Nous Font Confiance
+            Leurs Confiance
           </h2>
           <a
             href="https://www.google.com/maps/place/Mazette/@44.853878,-0.5693644,17z/data=!4m16!1m7!3m6!1s0xd55299fb4fd8b0f:0xd046328116ea8a59!2sMazette!8m2!3d44.853878!4d-0.5693644!16s%2Fg%2F11zj8_tz3s!3m7!1s0xd55299fb4fd8b0f:0xd046328116ea8a59!8m2!3d44.853878!4d-0.5693644!9m1!1b1!16s%2Fg%2F11zj8_tz3s"

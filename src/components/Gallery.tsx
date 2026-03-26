@@ -270,8 +270,7 @@ export default function Gallery() {
             Nos Realisations
           </h2>
           <p className="text-beige/60 mt-4 max-w-xl mx-auto text-lg">
-            Chaque coupe raconte une histoire. Decouvrez le savoir-faire
-            Mazette.
+            Chacun libre d&apos;etre ecoutes.
           </p>
         </div>
 

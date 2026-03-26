@@ -31,6 +31,9 @@ export default function Hero() {
                 priority
               />
             </h1>
+            <p className="text-2xl font-semibold text-orange tracking-wide">
+              Coiffeur pour humain.e(s)
+            </p>
             <p className="text-xl text-beige/90 leading-relaxed max-w-lg">
               Notre salon est un lieu ouvert et bienveillant, où chacun·e est
               accueilli·e avec simplicité et attention.

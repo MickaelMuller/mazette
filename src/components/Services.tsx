@@ -68,7 +68,7 @@ export default function Services() {
             Nos Tarifs
           </h2>
           <p className="text-foreground/60 mt-4 max-w-xl mx-auto text-lg">
-            Des prestations sur-mesure pour sublimer chaque chevelure.
+            Des prestations sur mesure non genres.
           </p>
         </div>
 
