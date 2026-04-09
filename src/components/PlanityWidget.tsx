@@ -28,7 +28,7 @@ export default function PlanityWidget() {
       <div
         id="planity-widget"
         ref={containerRef}
-        className="w-full min-h-[600px] rounded-3xl overflow-hidden"
+        className="w-full min-h-[600px] rounded-3xl"
       />
       <Script
         src="https://d2skjte8udjqxw.cloudfront.net/widget/production/2/polyfills.latest.js"

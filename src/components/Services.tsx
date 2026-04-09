@@ -16,7 +16,7 @@ const categories: ServiceCategory[] = [
     color: "bg-rose-500",
     items: [
       { name: "Courte Tondeuse", duration: "30min", price: "32€ - 35€" },
-      { name: "Cheveux Courts", duration: "45min", price: "40€ - 50€" },
+      { name: "Cheveux Courts", duration: "45min", price: "42€ - 50€" },
       { name: "Cheveux Mi-Longs", duration: "1h", price: "63€ - 70€" },
       { name: "Cheveux Longs", duration: "1h15", price: "75€ - 80€" },
     ],
@@ -25,7 +25,7 @@ const categories: ServiceCategory[] = [
     title: "Mise en Forme",
     color: "bg-purple-500",
     items: [
-      { name: "Mise en forme", duration: "30min", price: "30€" },
+      { name: "Mise en forme", duration: "30min", price: "32€" },
       {
         name: "Mise en forme EXTRA (fer ou boucleur)",
         duration: "45min",
