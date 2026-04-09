@@ -96,12 +96,18 @@ export default function Footer() {
             &copy; 2025 Mazette Coiffure. Tous droits réservés.
           </div>
           <div className="flex gap-6 text-sm text-white/60">
-            <a href="#" className="hover:text-orange transition-colors">
+            <Link
+              href="/mentions-legales"
+              className="hover:text-orange transition-colors"
+            >
               Mentions légales
-            </a>
-            <a href="#" className="hover:text-orange transition-colors">
-              Confidentialite
-            </a>
+            </Link>
+            <Link
+              href="/confidentialite"
+              className="hover:text-orange transition-colors"
+            >
+              Confidentialité
+            </Link>
           </div>
         </div>
       </div>
