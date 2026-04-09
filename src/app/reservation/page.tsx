@@ -3,9 +3,26 @@ import { ExternalLink } from "lucide-react";
 import PlanityWidget from "@/components/PlanityWidget";
 
 export const metadata: Metadata = {
-  title: "Reservation - Mazette Coiffure",
+  title: "Reservation",
   description:
-    "Reservez votre rendez-vous en ligne chez Mazette Coiffure, salon de coiffure a Bordeaux quartier Notre-Dame.",
+    "Reservez votre rendez-vous en ligne chez Mazette Coiffure, salon de coiffure inclusif a Bordeaux quartier Notre-Dame. Prestations non genrees, choisissez et reservez directement.",
+  alternates: {
+    canonical: "https://www.mazette-bordeaux-coiffeur.fr/reservation",
+  },
+  openGraph: {
+    title: "Reservation - Mazette Coiffure",
+    description:
+      "Reservez votre rendez-vous en ligne chez Mazette Coiffure a Bordeaux.",
+    url: "https://www.mazette-bordeaux-coiffeur.fr/reservation",
+    images: [
+      {
+        url: "/images/salon1.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Mazette Coiffure - Reservation en ligne",
+      },
+    ],
+  },
 };
 
 export default function ReservationPage() {
