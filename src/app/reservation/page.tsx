@@ -36,7 +36,7 @@ export default function ReservationPage() {
           <h1 className="text-4xl md:text-5xl font-black text-violet mt-2">
             Prendre Rendez-vous
           </h1>
-          <p className="text-foreground/60 mt-4 max-w-xl mx-auto text-lg">
+          <p className="text-foreground/70 mt-4 max-w-xl mx-auto text-lg">
             Choisissez votre prestation et réservez directement en ligne.
           </p>
           <a

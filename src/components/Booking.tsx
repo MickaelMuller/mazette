@@ -23,7 +23,7 @@ export default function Booking() {
           <h2 className="text-4xl md:text-5xl font-black text-violet mt-2">
             Le Salon
           </h2>
-          <p className="text-foreground/60 mt-4 max-w-xl mx-auto text-lg">
+          <p className="text-foreground/70 mt-4 max-w-xl mx-auto text-lg">
             Un espace où l&apos;on se sent bien, comme à la maison.
           </p>
         </div>
@@ -91,7 +91,7 @@ export default function Booking() {
                     <span
                       className={
                         h.isClosed
-                          ? "text-foreground/40"
+                          ? "text-foreground/60"
                           : "font-medium text-foreground/80"
                       }
                     >
@@ -100,7 +100,7 @@ export default function Booking() {
                     <span
                       className={
                         h.isClosed
-                          ? "text-foreground/40"
+                          ? "text-foreground/60"
                           : "font-semibold text-violet"
                       }
                     >

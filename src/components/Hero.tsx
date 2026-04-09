@@ -34,7 +34,7 @@ export default function Hero() {
             <p className="text-2xl font-semibold text-orange tracking-wide">
               Coiffeur pour humain.e(s)
             </p>
-            <p className="text-xl text-beige/90 leading-relaxed max-w-lg">
+            <p className="text-xl text-beige leading-relaxed max-w-lg">
               Notre salon est un lieu ouvert et bienveillant, où chacun·e est
               accueilli·e avec simplicité et attention.
             </p>
@@ -58,12 +58,12 @@ export default function Hero() {
           <div className="flex items-center gap-8 pt-4">
             <div className="text-center">
               <div className="text-3xl font-black text-orange">10+</div>
-              <div className="text-beige/70 text-sm">ans d&apos;expérience</div>
+              <div className="text-beige/80 text-sm">ans d&apos;expérience</div>
             </div>
             <div className="w-px h-12 bg-white/20" />
             <div className="text-center">
               <div className="text-3xl font-black text-orange">Lun-Ven</div>
-              <div className="text-beige/70 text-sm">9h - 20h</div>
+              <div className="text-beige/80 text-sm">9h - 20h</div>
             </div>
           </div>
         </div>

@@ -269,7 +269,7 @@ export default function Gallery() {
           <h2 className="text-4xl md:text-5xl font-black text-white mt-2">
             Nos Realisations
           </h2>
-          <p className="text-beige/60 mt-4 max-w-xl mx-auto text-lg">
+          <p className="text-beige/80 mt-4 max-w-xl mx-auto text-lg">
             Chacun libre d&apos;être écoutés.
           </p>
         </div>
@@ -281,6 +281,7 @@ export default function Gallery() {
         >
           <button
             onClick={() => goTo("prev")}
+            aria-label="Photo précédente"
             className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white/70 hover:text-white hover:bg-white/20 hover:scale-110 transition-all cursor-pointer border border-white/10"
           >
             <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
@@ -288,6 +289,7 @@ export default function Gallery() {
 
           <button
             onClick={() => goTo("next")}
+            aria-label="Photo suivante"
             className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white/70 hover:text-white hover:bg-white/20 hover:scale-110 transition-all cursor-pointer border border-white/10"
           >
             <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
@@ -361,7 +363,7 @@ export default function Gallery() {
         </div>
 
         <div className="flex flex-col items-center gap-4 mt-8">
-          <div className="text-white/40 text-sm font-mono">
+          <div className="text-white/70 text-sm font-mono">
             {String(currentIndex + 1).padStart(2, "0")} /{" "}
             {String(realisations.length).padStart(2, "0")}
           </div>
@@ -370,6 +372,7 @@ export default function Gallery() {
               <button
                 key={i}
                 onClick={() => setCurrentIndex(i)}
+                aria-label={`Aller à la photo ${i + 1}`}
                 className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${
                   i === currentIndex
                     ? "bg-orange w-8"
@@ -405,6 +408,7 @@ export default function Gallery() {
               e.stopPropagation();
               setSelectedIndex(null);
             }}
+            aria-label="Fermer"
             className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors z-10 cursor-pointer"
           >
             <X className="w-8 h-8" />
@@ -415,6 +419,7 @@ export default function Gallery() {
               e.stopPropagation();
               goToLightbox("prev");
             }}
+            aria-label="Photo précédente"
             className="absolute left-4 text-white/70 hover:text-white hover:scale-110 transition-all z-10 cursor-pointer"
           >
             <ChevronLeft className="w-10 h-10" />
@@ -425,6 +430,7 @@ export default function Gallery() {
               e.stopPropagation();
               goToLightbox("next");
             }}
+            aria-label="Photo suivante"
             className="absolute right-4 text-white/70 hover:text-white hover:scale-110 transition-all z-10 cursor-pointer"
           >
             <ChevronRight className="w-10 h-10" />

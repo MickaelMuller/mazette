@@ -67,7 +67,7 @@ export default function Services() {
           <h2 className="text-4xl md:text-5xl font-black text-violet mt-2">
             Nos Tarifs
           </h2>
-          <p className="text-foreground/60 mt-4 max-w-xl mx-auto text-lg">
+          <p className="text-foreground/70 mt-4 max-w-xl mx-auto text-lg">
             Des prestations sur mesure non genrées.
           </p>
         </div>
@@ -97,7 +97,7 @@ export default function Services() {
                           {item.name}
                         </span>
                       </div>
-                      <span className="text-foreground/40 text-sm ml-[18px]">
+                      <span className="text-foreground/60 text-sm ml-[18px]">
                         {item.duration}
                       </span>
                     </div>

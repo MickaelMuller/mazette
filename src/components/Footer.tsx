@@ -17,7 +17,7 @@ export default function Footer() {
                 className="h-10 w-auto"
               />
             </div>
-            <p className="text-white/60 leading-relaxed">
+            <p className="text-white/70 leading-relaxed">
               Votre salon de coiffure chaleureux et créatif au cœur de Bordeaux,
               quartier Notre-Dame.
             </p>
@@ -25,7 +25,7 @@ export default function Footer() {
               href="https://www.instagram.com/mazettenotredame/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 mt-6 text-white/60 hover:text-orange transition-colors"
+              className="inline-flex items-center gap-2 mt-6 text-white/70 hover:text-orange transition-colors"
             >
               <Instagram className="w-5 h-5" />
               @mazettenotredame
@@ -34,7 +34,7 @@ export default function Footer() {
 
           <div>
             <h3 className="font-bold text-lg mb-6">Contact</h3>
-            <div className="space-y-4 text-white/60">
+            <div className="space-y-4 text-white/70">
               <a
                 href="tel:0556047617"
                 className="flex items-center gap-3 hover:text-orange transition-colors"
@@ -56,7 +56,7 @@ export default function Footer() {
 
           <div>
             <h3 className="font-bold text-lg mb-6">Horaires</h3>
-            <div className="space-y-2 text-white/60 text-sm">
+            <div className="space-y-2 text-white/70 text-sm">
               <div className="flex justify-between">
                 <span>Lundi</span>
                 <span className="text-white">9h - 18h</span>
@@ -79,7 +79,7 @@ export default function Footer() {
               </div>
               <div className="flex justify-between">
                 <span>Sam - Dim</span>
-                <span className="text-white/40">Fermé</span>
+                <span className="text-white/60">Fermé</span>
               </div>
             </div>
             <Link
@@ -92,10 +92,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-white/40 text-sm">
+          <div className="text-white/60 text-sm">
             &copy; 2025 Mazette Coiffure. Tous droits réservés.
           </div>
-          <div className="flex gap-6 text-sm text-white/40">
+          <div className="flex gap-6 text-sm text-white/60">
             <a href="#" className="hover:text-orange transition-colors">
               Mentions légales
             </a>

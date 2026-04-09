@@ -48,7 +48,7 @@ export default function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-foreground/70 hover:text-violet font-medium transition-colors relative group"
+                className="text-foreground/80 hover:text-violet font-medium transition-colors relative group"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange transition-all duration-300 group-hover:w-full" />
@@ -59,7 +59,7 @@ export default function Navigation() {
           <div className="hidden md:flex items-center gap-4">
             <a
               href="tel:0556047617"
-              className="flex items-center gap-2 text-foreground/70 hover:text-violet transition-colors"
+              className="flex items-center gap-2 text-foreground/80 hover:text-violet transition-colors"
             >
               <Phone className="w-4 h-4" />
               <span className="font-medium">05 56 04 76 17</span>
@@ -74,6 +74,7 @@ export default function Navigation() {
 
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
             className="md:hidden p-2 rounded-lg hover:bg-beige transition-colors"
           >
             {isMenuOpen ? (
@@ -100,7 +101,7 @@ export default function Navigation() {
               <div className="px-6 pt-4 border-t border-beige space-y-3">
                 <a
                   href="tel:0556047617"
-                  className="flex items-center gap-2 text-foreground/70 hover:text-violet transition-colors"
+                  className="flex items-center gap-2 text-foreground/80 hover:text-violet transition-colors"
                 >
                   <Phone className="w-4 h-4" />
                   <span className="font-medium">05 56 04 76 17</span>

@@ -11,7 +11,7 @@ export default function Contact() {
           <h2 className="text-4xl md:text-5xl font-black text-violet mt-2">
             On Papote ?
           </h2>
-          <p className="text-foreground/60 mt-4 max-w-xl mx-auto text-lg">
+          <p className="text-foreground/70 mt-4 max-w-xl mx-auto text-lg">
             Une question, une envie, un doute sur votre prochaine coupe ?
           </p>
         </div>
@@ -29,7 +29,7 @@ export default function Contact() {
                       <Phone className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <p className="text-white/50 text-sm">Téléphone</p>
+                      <p className="text-white/70 text-sm">Téléphone</p>
                       <p className="text-white font-semibold text-lg">
                         05 56 04 76 17
                       </p>
@@ -46,7 +46,7 @@ export default function Contact() {
                       <MapPin className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <p className="text-white/50 text-sm">Adresse</p>
+                      <p className="text-white/70 text-sm">Adresse</p>
                       <p className="text-white font-semibold">
                         130 Rue Notre-Dame, Bordeaux
                       </p>
@@ -63,7 +63,7 @@ export default function Contact() {
                       <Instagram className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <p className="text-white/50 text-sm">Instagram</p>
+                      <p className="text-white/70 text-sm">Instagram</p>
                       <p className="text-white font-semibold">
                         @mazettenotredame
                       </p>
@@ -112,7 +112,7 @@ export default function Contact() {
                       </div>
                       <div className="flex justify-between">
                         <span>Sam - Dim</span>
-                        <span className="text-white/30 font-medium">Fermé</span>
+                        <span className="text-white/60 font-medium">Fermé</span>
                       </div>
                     </div>
                   </div>
