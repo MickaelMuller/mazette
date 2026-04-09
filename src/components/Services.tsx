@@ -45,11 +45,11 @@ const categories: ServiceCategory[] = [
     title: "Techniques",
     color: "bg-amber-400",
     items: [
-      { name: "Le Balayage", duration: "3h45", price: "200€ - 240€" },
+      { name: "Le Balayage", duration: "3h45", price: "200€ - 250€" },
       {
         name: "La Reprise Du Balayage",
         duration: "2h45",
-        price: "160€ - 190€",
+        price: "160€ - 200€",
       },
       { name: "Le Projet Créatif", duration: "5h", price: "Sur devis" },
     ],

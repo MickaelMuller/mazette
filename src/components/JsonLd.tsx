@@ -61,7 +61,7 @@ const localBusinessSchema = {
       closes: "17:30",
     },
   ],
-  priceRange: "32€ - 240€",
+  priceRange: "32€ - 250€",
   currenciesAccepted: "EUR",
   paymentAccepted: "Cash, Credit Card",
   sameAs: ["https://www.instagram.com/mazettenotredame/"],
