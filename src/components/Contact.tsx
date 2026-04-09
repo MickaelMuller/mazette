@@ -87,7 +87,7 @@ export default function Contact() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center space-y-6">
                     <div className="text-8xl font-black text-white/10">M</div>
-                    <div className="space-y-2 text-white/60 text-sm px-8">
+                    <div className="space-y-2 text-white/60 text-sm px-8 min-w-[220px]">
                       <div className="flex justify-between">
                         <span>Lundi</span>
                         <span className="text-white font-medium">9h - 18h</span>
