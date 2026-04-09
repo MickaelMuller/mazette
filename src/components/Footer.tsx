@@ -18,8 +18,8 @@ export default function Footer() {
               />
             </div>
             <p className="text-white/60 leading-relaxed">
-              Votre salon de coiffure chaleureux et creatif au coeur de
-              Bordeaux, quartier Notre-Dame.
+              Votre salon de coiffure chaleureux et créatif au cœur de Bordeaux,
+              quartier Notre-Dame.
             </p>
             <a
               href="https://www.instagram.com/mazettenotredame/"
@@ -79,25 +79,25 @@ export default function Footer() {
               </div>
               <div className="flex justify-between">
                 <span>Sam - Dim</span>
-                <span className="text-white/40">Ferme</span>
+                <span className="text-white/40">Fermé</span>
               </div>
             </div>
             <Link
               href="/reservation"
               className="inline-block mt-8 bg-orange text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-light transition-colors text-sm"
             >
-              Reserver en ligne
+              Réserver en ligne
             </Link>
           </div>
         </div>
 
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-white/40 text-sm">
-            &copy; 2025 Mazette Coiffure. Tous droits reserves.
+            &copy; 2025 Mazette Coiffure. Tous droits réservés.
           </div>
           <div className="flex gap-6 text-sm text-white/40">
             <a href="#" className="hover:text-orange transition-colors">
-              Mentions legales
+              Mentions légales
             </a>
             <a href="#" className="hover:text-orange transition-colors">
               Confidentialite

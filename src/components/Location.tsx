@@ -4,7 +4,7 @@ export default function Location() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-orange font-semibold uppercase tracking-widest text-sm">
-            Acces
+            Accès
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-violet mt-2">
             Nous Trouver

@@ -29,7 +29,7 @@ export default function Contact() {
                       <Phone className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <p className="text-white/50 text-sm">Telephone</p>
+                      <p className="text-white/50 text-sm">Téléphone</p>
                       <p className="text-white font-semibold text-lg">
                         05 56 04 76 17
                       </p>
@@ -77,7 +77,7 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="mt-10 flex items-center justify-center gap-2 w-full bg-orange text-white py-4 rounded-full font-bold text-lg hover:bg-orange-light transition-colors"
                 >
-                  Reserver sur Planity
+                  Réserver sur Planity
                   <ExternalLink className="w-5 h-5" />
                 </a>
               </div>
@@ -112,7 +112,7 @@ export default function Contact() {
                       </div>
                       <div className="flex justify-between">
                         <span>Sam - Dim</span>
-                        <span className="text-white/30 font-medium">Ferme</span>
+                        <span className="text-white/30 font-medium">Fermé</span>
                       </div>
                     </div>
                   </div>

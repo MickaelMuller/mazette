@@ -51,7 +51,7 @@ const categories: ServiceCategory[] = [
         duration: "2h45",
         price: "160€ - 190€",
       },
-      { name: "Le Projet Creatif", duration: "5h", price: "Sur devis" },
+      { name: "Le Projet Créatif", duration: "5h", price: "Sur devis" },
     ],
   },
 ];
@@ -68,7 +68,7 @@ export default function Services() {
             Nos Tarifs
           </h2>
           <p className="text-foreground/60 mt-4 max-w-xl mx-auto text-lg">
-            Des prestations sur mesure non genres.
+            Des prestations sur mesure non genrées.
           </p>
         </div>
 

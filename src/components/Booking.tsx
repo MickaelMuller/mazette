@@ -8,8 +8,8 @@ const horaires = [
   { jour: "Mercredi", heures: "9h - 18h", isClosed: false },
   { jour: "Jeudi", heures: "9h - 20h", isClosed: false },
   { jour: "Vendredi", heures: "9h - 17h30", isClosed: false },
-  { jour: "Samedi", heures: "Ferme", isClosed: true },
-  { jour: "Dimanche", heures: "Ferme", isClosed: true },
+  { jour: "Samedi", heures: "Fermé", isClosed: true },
+  { jour: "Dimanche", heures: "Fermé", isClosed: true },
 ];
 
 export default function Booking() {
@@ -24,7 +24,7 @@ export default function Booking() {
             Le Salon
           </h2>
           <p className="text-foreground/60 mt-4 max-w-xl mx-auto text-lg">
-            Un espace ou l&apos;on se sent bien, comme a la maison.
+            Un espace où l&apos;on se sent bien, comme à la maison.
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export default function Booking() {
               <div className="rounded-3xl overflow-hidden">
                 <Image
                   src="/images/salon3.jpeg"
-                  alt="Espace detente du salon"
+                  alt="Espace détente du salon"
                   width={400}
                   height={500}
                   className="w-full h-64 object-cover"
@@ -43,7 +43,7 @@ export default function Booking() {
               <div className="rounded-3xl overflow-hidden">
                 <Image
                   src="/images/salon1.jpeg"
-                  alt="Decoration du salon"
+                  alt="Décoration du salon"
                   width={400}
                   height={300}
                   className="w-full h-48 object-cover"
@@ -54,7 +54,7 @@ export default function Booking() {
               <div className="rounded-3xl overflow-hidden">
                 <Image
                   src="/images/salon2.jpeg"
-                  alt="Vue interieure du salon"
+                  alt="Vue intérieure du salon"
                   width={400}
                   height={600}
                   className="w-full h-80 object-cover"
@@ -66,12 +66,12 @@ export default function Booking() {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-violet mb-4">
-                Un lieu unique a Bordeaux
+                Un lieu unique à Bordeaux
               </h3>
               <p className="text-foreground/70 leading-relaxed text-lg">
-                Installe dans le quartier Notre-Dame, Mazette Coiffure vous
-                accueille dans un cadre chaleureux et authentique. Canape
-                vintage, tapis colore, plantes vertes et boule disco — ici, on
+                Installé dans le quartier Notre-Dame, Mazette Coiffure vous
+                accueille dans un cadre chaleureux et authentique. Canapé
+                vintage, tapis coloré, plantes vertes et boule disco — ici, on
                 vient pour se faire belle et beau mais aussi pour passer un bon
                 moment.
               </p>
@@ -119,7 +119,7 @@ export default function Booking() {
             className="inline-flex items-center justify-center gap-2 bg-orange text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-orange-light transition-colors"
           >
             <CalendarDays className="w-5 h-5" />
-            Reserver en ligne
+            Réserver en ligne
           </Link>
         </div>
       </div>

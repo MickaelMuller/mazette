@@ -5,18 +5,18 @@ import Image from "next/image";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const realisations = [
-  { src: "/images/femme1.jpeg", alt: "Boucles dorees" },
+  { src: "/images/femme1.jpeg", alt: "Boucles dorées" },
   { src: "/images/femme2.jpeg", alt: "Reflets violets" },
   { src: "/images/femme3.jpeg", alt: "Balayage blond" },
   { src: "/images/femme5.jpeg", alt: "Balayage caramel" },
-  { src: "/images/femme6.jpeg", alt: "Blond rose" },
+  { src: "/images/femme6.jpeg", alt: "Blond rosé" },
   { src: "/images/femme7.jpeg", alt: "Brushing naturel" },
-  { src: "/images/femme8.jpeg", alt: "Coupe courte texturee" },
+  { src: "/images/femme8.jpeg", alt: "Coupe courte texturée" },
   { src: "/images/homme1.jpeg", alt: "Boucles naturelles homme" },
-  { src: "/images/homme2.jpeg", alt: "Mullet boucle" },
+  { src: "/images/homme2.jpeg", alt: "Mullet bouclé" },
   { src: "/images/homme3.jpeg", alt: "Coupe classique homme" },
   { src: "/images/homme4.jpeg", alt: "Coupe courte homme" },
-  { src: "/images/femme4.jpeg", alt: "Ombre cuivre" },
+  { src: "/images/femme4.jpeg", alt: "Ombré cuivré" },
 ];
 
 const SPARKLES = [
@@ -270,7 +270,7 @@ export default function Gallery() {
             Nos Realisations
           </h2>
           <p className="text-beige/60 mt-4 max-w-xl mx-auto text-lg">
-            Chacun libre d&apos;etre ecoutes.
+            Chacun libre d&apos;être écoutés.
           </p>
         </div>
 
@@ -354,16 +354,6 @@ export default function Gallery() {
                     height={600}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  {isCenter && (
-                    <>
-                      <div className="absolute inset-0 bg-gradient-to-t from-violet-dark/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                      <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                        <p className="text-white font-semibold text-lg drop-shadow-lg">
-                          {item.alt}
-                        </p>
-                      </div>
-                    </>
-                  )}
                 </div>
               </div>
             );
@@ -451,9 +441,6 @@ export default function Gallery() {
               height={1200}
               className="max-h-[85vh] w-auto rounded-2xl object-contain"
             />
-            <p className="text-white text-center mt-4 font-medium text-lg">
-              {realisations[selectedIndex].alt}
-            </p>
           </div>
         </div>
       )}

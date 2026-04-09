@@ -17,7 +17,7 @@ export default function Navigation() {
 
   const navLinks = [
     { href: "/#salon", label: "Le Salon" },
-    { href: "/#realisations", label: "Realisations" },
+    { href: "/#realisations", label: "Réalisations" },
     { href: "/#services", label: "Services" },
     { href: "/#contact", label: "Contact" },
   ];
@@ -68,7 +68,7 @@ export default function Navigation() {
               href="/reservation"
               className="bg-violet text-white px-6 py-2.5 rounded-full font-semibold hover:bg-violet-light transition-colors"
             >
-              Reserver
+              Réserver
             </Link>
           </div>
 
@@ -110,7 +110,7 @@ export default function Navigation() {
                   className="block w-full bg-violet text-white px-6 py-3 rounded-full font-semibold hover:bg-violet-light transition-colors text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Reserver
+                  Réserver
                 </Link>
               </div>
             </div>

@@ -5,11 +5,11 @@ const localBusinessSchema = {
   "@type": "HairSalon",
   name: "Mazette Coiffure",
   description:
-    "Salon de coiffure inclusif et non genre au coeur de Bordeaux, quartier Notre-Dame. Coupes, colorations, balayages pour tous. Ambiance chaleureuse et bienveillante.",
+    "Salon de coiffure inclusif et non genré au cœur de Bordeaux, quartier Notre-Dame. Coupes, colorations, balayages pour tous. Ambiance chaleureuse et bienveillante.",
   slogan: "Coiffeur pour humain.e(s)",
   knowsAbout: [
     "Coiffure inclusive",
-    "Coupe non genree",
+    "Coupe non genrée",
     "Coloration",
     "Balayage",
     "Soins capillaires",

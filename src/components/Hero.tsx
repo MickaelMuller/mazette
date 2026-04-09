@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <Image
           src="/images/salon2.jpeg"
-          alt="Interieur du salon Mazette Coiffure"
+          alt="Intérieur du salon Mazette Coiffure"
           fill
           className="object-cover"
           priority
@@ -51,14 +51,14 @@ export default function Hero() {
               href="#salon"
               className="border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition-colors text-center backdrop-blur-sm"
             >
-              Decouvrir le salon
+              Découvrir le salon
             </a>
           </div>
 
           <div className="flex items-center gap-8 pt-4">
             <div className="text-center">
               <div className="text-3xl font-black text-orange">10+</div>
-              <div className="text-beige/70 text-sm">ans d&apos;experience</div>
+              <div className="text-beige/70 text-sm">ans d&apos;expérience</div>
             </div>
             <div className="w-px h-12 bg-white/20" />
             <div className="text-center">

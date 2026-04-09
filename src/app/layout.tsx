@@ -15,20 +15,20 @@ const BASE_URL = "https://www.mazette-bordeaux-coiffeur.fr";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Mazette Coiffure - Salon de Coiffure a Bordeaux",
+    default: "Mazette Coiffure - Salon de Coiffure à Bordeaux",
     template: "%s | Mazette Coiffure",
   },
   description:
-    "Salon de coiffure inclusif et non genre au coeur de Bordeaux, quartier Notre-Dame. Coupes, colorations, balayages et soins pour tous. Ambiance chaleureuse et bienveillante. Reservation en ligne.",
+    "Salon de coiffure inclusif et non genré au cœur de Bordeaux, quartier Notre-Dame. Coupes, colorations, balayages et soins pour tous. Ambiance chaleureuse et bienveillante. Réservation en ligne.",
   keywords:
     "coiffeur bordeaux, salon coiffure bordeaux, coiffeur inclusif bordeaux, salon non genre bordeaux, coupe cheveux bordeaux, coloration bordeaux, balayage bordeaux, coiffeur notre dame bordeaux, mazette coiffure, salon coiffure chartrons",
   alternates: {
     canonical: BASE_URL,
   },
   openGraph: {
-    title: "Mazette Coiffure - Salon de Coiffure a Bordeaux",
+    title: "Mazette Coiffure - Salon de Coiffure à Bordeaux",
     description:
-      "Salon de coiffure inclusif et non genre au coeur de Bordeaux, quartier Notre-Dame. Coupes, colorations, balayages pour tous.",
+      "Salon de coiffure inclusif et non genré au cœur de Bordeaux, quartier Notre-Dame. Coupes, colorations, balayages pour tous.",
     locale: "fr_FR",
     type: "website",
     url: BASE_URL,
@@ -38,15 +38,15 @@ export const metadata: Metadata = {
         url: "/images/salon1.jpeg",
         width: 1200,
         height: 630,
-        alt: "Mazette Coiffure - Salon de coiffure a Bordeaux",
+        alt: "Mazette Coiffure - Salon de coiffure à Bordeaux",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mazette Coiffure - Salon de Coiffure a Bordeaux",
+    title: "Mazette Coiffure - Salon de Coiffure à Bordeaux",
     description:
-      "Salon de coiffure inclusif et non genre au coeur de Bordeaux. Coupes, colorations, balayages pour tous.",
+      "Salon de coiffure inclusif et non genré au cœur de Bordeaux. Coupes, colorations, balayages pour tous.",
     images: ["/images/salon1.jpeg"],
   },
 };
