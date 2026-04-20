@@ -270,7 +270,7 @@ export default function Gallery() {
             Nos Realisations
           </h2>
           <p className="text-beige/80 mt-4 max-w-xl mx-auto text-lg">
-            Chacun libre d&apos;être écoutés.
+            Chacun·e libre d&apos;être écouté·e.
           </p>
         </div>
 
