@@ -85,13 +85,66 @@ export default function ReservationPage() {
               genrées.
             </p>
           </div>
-          <p className="text-foreground/60 text-sm text-center max-w-2xl mx-auto mb-10">
-            La réservation est assurée par Planity. Connectez-vous à votre
-            compte ou créez-en un pour réserver directement depuis cette page.
-            Salon de coiffure inclusif au 130 rue Notre-Dame à Bordeaux —
-            coupes, colorations et balayages adaptés à vos envies, sans
-            distinction de genre.
-          </p>
+
+          <div className="max-w-2xl mx-auto mb-10 bg-white border border-beige rounded-3xl p-6 sm:p-8 shadow-sm">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="inline-flex items-center gap-2 bg-violet/10 text-violet text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">
+                <span className="w-2 h-2 bg-violet rounded-full" />
+                Réservation via Planity
+              </span>
+            </div>
+            <p className="text-foreground/80 leading-relaxed">
+              La prise de rendez-vous est assurée par{" "}
+              <strong className="text-violet">Planity</strong>, notre partenaire
+              de réservation en ligne. Le module ci-dessous est le widget
+              officiel Planity intégré à notre site.
+            </p>
+            <ul className="mt-4 space-y-2 text-foreground/70 text-sm">
+              <li className="flex items-start gap-2">
+                <span className="text-orange mt-1" aria-hidden="true">
+                  →
+                </span>
+                <span>
+                  Vous avez déjà un compte Planity ?{" "}
+                  <strong>Connectez-vous</strong> depuis le widget pour réserver
+                  en quelques clics.
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-orange mt-1" aria-hidden="true">
+                  →
+                </span>
+                <span>
+                  Pas encore de compte ? <strong>Créez-le gratuitement</strong>{" "}
+                  au moment de la réservation.
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-orange mt-1" aria-hidden="true">
+                  →
+                </span>
+                <span>
+                  Vous recevrez une confirmation par email ainsi qu&apos;un
+                  rappel avant votre rendez-vous.
+                </span>
+              </li>
+            </ul>
+            <div className="mt-6 pt-5 border-t border-beige flex flex-wrap items-center justify-between gap-3">
+              <p className="text-foreground/60 text-sm">
+                Vous préférez réserver depuis Planity ?
+              </p>
+              <a
+                href="https://www.planity.com/mazette-33300-bordeaux"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-violet text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-violet-light transition-colors"
+              >
+                Ouvrir sur Planity
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
           <PlanityWidget />
         </div>
       </section>

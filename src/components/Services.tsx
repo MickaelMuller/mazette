@@ -1,60 +1,5 @@
-interface ServiceItem {
-  name: string;
-  duration: string;
-  price: string;
-}
-
-interface ServiceCategory {
-  title: string;
-  color: string;
-  items: ServiceItem[];
-}
-
-const categories: ServiceCategory[] = [
-  {
-    title: "Coupes",
-    color: "bg-rose-500",
-    items: [
-      { name: "Courte Tondeuse", duration: "30min", price: "32€ - 35€" },
-      { name: "Cheveux Courts", duration: "45min", price: "42€ - 50€" },
-      { name: "Cheveux Mi-Longs", duration: "1h", price: "63€ - 70€" },
-      { name: "Cheveux Longs", duration: "1h15", price: "75€ - 80€" },
-    ],
-  },
-  {
-    title: "Mise en Forme",
-    color: "bg-purple-500",
-    items: [
-      { name: "Mise en forme", duration: "30min", price: "32€" },
-      {
-        name: "Mise en forme EXTRA (fer ou boucleur)",
-        duration: "45min",
-        price: "40€",
-      },
-    ],
-  },
-  {
-    title: "Forfaits",
-    color: "bg-emerald-500",
-    items: [
-      { name: "Couleur + Coupe", duration: "2h", price: "90€ - 160€" },
-      { name: "Vernis + Coupe", duration: "1h30", price: "90€ - 160€" },
-    ],
-  },
-  {
-    title: "Techniques",
-    color: "bg-amber-400",
-    items: [
-      { name: "Le Balayage", duration: "3h45", price: "200€ - 250€" },
-      {
-        name: "La Reprise Du Balayage",
-        duration: "2h45",
-        price: "160€ - 200€",
-      },
-      { name: "Le Projet Créatif", duration: "5h", price: "Sur devis" },
-    ],
-  },
-];
+import Link from "next/link";
+import { priceCategories } from "@/data/prices";
 
 export default function Services() {
   return (
@@ -73,14 +18,24 @@ export default function Services() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          {categories.map((category) => (
+          {priceCategories.map((category) => (
             <div
-              key={category.title}
+              key={category.key}
               className="bg-white rounded-3xl p-5 sm:p-8 hover:shadow-xl transition-all duration-300 overflow-hidden"
             >
-              <h3 className="text-xl font-bold text-violet mb-6">
-                {category.title}
-              </h3>
+              <div className="flex items-center justify-between mb-6 gap-2">
+                <h3 className="text-xl font-bold text-violet">
+                  {category.title}
+                </h3>
+                {category.href && (
+                  <Link
+                    href={category.href}
+                    className="text-sm font-semibold text-orange hover:text-orange-light transition-colors shrink-0"
+                  >
+                    En savoir plus →
+                  </Link>
+                )}
+              </div>
 
               <div className="space-y-4">
                 {category.items.map((item) => (

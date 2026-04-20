@@ -22,7 +22,7 @@ export default function Hero() {
               <span className="w-2 h-2 bg-orange rounded-full animate-pulse" />
               Bordeaux - Quartier Notre-Dame
             </div>
-            <h1>
+            <div>
               <Image
                 src="/images/logo-mazette.svg"
                 alt="Mazette Coiffure"
@@ -30,13 +30,17 @@ export default function Hero() {
                 height={125}
                 priority
               />
+            </div>
+            <h1 className="text-3xl md:text-4xl font-black text-white leading-tight">
+              Salon de coiffure inclusif à Bordeaux — Notre-Dame
             </h1>
             <p className="text-2xl font-semibold text-orange tracking-wide">
               Coiffeur pour humain.e(s)
             </p>
             <p className="text-xl text-beige leading-relaxed max-w-lg">
-              Notre salon est un lieu ouvert et bienveillant, où chacun·e est
-              accueilli·e avec simplicité et attention.
+              Coupes, colorations et balayages non genrés au cœur de Bordeaux.
+              Un lieu ouvert et bienveillant, où chacun·e est accueilli·e avec
+              simplicité et attention.
             </p>
           </div>
 

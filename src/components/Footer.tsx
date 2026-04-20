@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-violet-dark text-white">
       <div className="container mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <div className="mb-6">
               <Image
@@ -30,6 +30,44 @@ export default function Footer() {
               <Instagram className="w-5 h-5" />
               @mazettenotredame
             </a>
+          </div>
+
+          <div>
+            <h3 className="font-bold text-lg mb-6">Prestations</h3>
+            <ul className="space-y-3 text-white/70">
+              <li>
+                <Link
+                  href="/services/coupe"
+                  className="hover:text-orange transition-colors"
+                >
+                  Coupe de cheveux
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/coloration"
+                  className="hover:text-orange transition-colors"
+                >
+                  Coloration
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/balayage"
+                  className="hover:text-orange transition-colors"
+                >
+                  Balayage
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/reservation"
+                  className="hover:text-orange transition-colors"
+                >
+                  Réservation en ligne
+                </Link>
+              </li>
+            </ul>
           </div>
 
           <div>
