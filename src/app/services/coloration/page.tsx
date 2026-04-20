@@ -131,15 +131,6 @@ export default function ColorationPage() {
           naturel.
         </p>
 
-        <h2>Un salon inclusif à Bordeaux Notre-Dame</h2>
-        <p>
-          Mazette Coiffure est un <strong>salon non genré</strong> : nos tarifs
-          dépendent uniquement de la longueur de vos cheveux et du temps
-          nécessaire, jamais de votre genre. Tout le monde est bienvenu·e,
-          quelle que soit votre identité, votre style ou votre projet
-          capillaire.
-        </p>
-
         <h2>Réserver une coloration à Bordeaux</h2>
         <p>
           Rendez-vous au <strong>130 rue Notre-Dame, 33000 Bordeaux</strong>.

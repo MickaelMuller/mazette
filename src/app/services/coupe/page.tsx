@@ -16,8 +16,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Coupe de cheveux à Bordeaux — Mazette Coiffure",
-    description:
-      "Coupes sur mesure, tarifs non genrés au salon Mazette à Bordeaux Notre-Dame.",
+    description: "Coupes sur mesure au salon Mazette à Bordeaux Notre-Dame.",
     url: PAGE_URL,
     images: [
       {
@@ -36,7 +35,7 @@ const serviceJsonLd = {
   name: "Coupe de cheveux à Bordeaux",
   serviceType: "Coupe et coiffure capillaire",
   description:
-    "Coupe de cheveux sur mesure au salon Mazette Coiffure à Bordeaux : coupes courtes, mi-longues, longues, tondeuse et mise en forme. Tarifs basés sur la longueur, prestations non genrées.",
+    "Coupe de cheveux sur mesure au salon Mazette Coiffure à Bordeaux : coupes courtes, mi-longues, longues, tondeuse et mise en forme.",
   provider: {
     "@type": "HairSalon",
     name: "Mazette Coiffure",
@@ -79,7 +78,7 @@ export default function CoupePage() {
       <ServicePageLayout
         eyebrow="Coupe"
         title="Coupe de cheveux à Bordeaux — coiffeur non genré"
-        intro="Chez Mazette Coiffure, rue Notre-Dame à Bordeaux, nos tarifs de coupe sont basés uniquement sur la longueur et le temps nécessaire — pas sur le genre. Coupes courtes, mi-longues, longues, tondeuse ou mise en forme : chaque prestation est pensée pour vous ressembler."
+        intro="Chez Mazette Coiffure, rue Notre-Dame à Bordeaux, nos tarifs de coupe sont basés sur la longueur et le temps nécessaire. Coupes courtes, mi-longues, longues, tondeuse ou mise en forme : chaque prestation est pensée pour vous ressembler."
         prices={coupePrices}
       >
         <h2>Une coupe adaptée à chaque longueur</h2>
@@ -117,15 +116,6 @@ export default function CoupePage() {
           Un <strong>brushing</strong> ou une mise en forme sans coupe, avec ou
           sans fer ou boucleur selon le rendu recherché. Parfait pour un
           évènement, une soirée ou simplement se faire plaisir.
-        </p>
-
-        <h2>Pourquoi un salon non genré à Bordeaux ?</h2>
-        <p>
-          Mazette est un <strong>salon de coiffure inclusif</strong>. Nos tarifs
-          dépendent de la longueur de vos cheveux et du temps technique, pas de
-          votre identité de genre. C&apos;est plus juste, plus simple, et ça
-          permet d&apos;accueillir tout le monde — femmes, hommes, personnes
-          non-binaires, enfants — sans étiquette ni supposition.
         </p>
 
         <h2>Comment se passe un rendez-vous ?</h2>

@@ -1,6 +1,6 @@
-import type { Metadata } from "next";
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { balayagePrices } from "@/data/prices";
+import type { Metadata } from "next";
 
 const BASE_URL = "https://www.mazette-bordeaux-coiffeur.fr";
 const PAGE_URL = `${BASE_URL}/services/balayage`;
@@ -127,10 +127,6 @@ export default function BalayagePage() {
           <li>
             <strong>Un diagnostic capillaire</strong> avant chaque prestation
             pour adapter la technique à la nature de vos cheveux.
-          </li>
-          <li>
-            <strong>Des prestations non genrées</strong> : tarifs basés sur la
-            longueur et la technique, pas sur le genre.
           </li>
           <li>
             <strong>Une ambiance chaleureuse</strong> en plein centre de
