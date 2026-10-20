@@ -7,7 +7,7 @@ const horaires = [
   { jour: "Mardi", heures: "9h - 20h", isClosed: false },
   { jour: "Mercredi", heures: "9h - 18h", isClosed: false },
   { jour: "Jeudi", heures: "9h - 20h", isClosed: false },
-  { jour: "Vendredi", heures: "9h - 17h30", isClosed: false },
+  { jour: "Vendredi", heures: "9h - 18h", isClosed: false },
   { jour: "Samedi", heures: "Fermé", isClosed: true },
   { jour: "Dimanche", heures: "Fermé", isClosed: true },
 ];

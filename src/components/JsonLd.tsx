@@ -58,7 +58,7 @@ const localBusinessSchema = {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: "Friday",
       opens: "09:00",
-      closes: "17:30",
+      closes: "18:00",
     },
   ],
   priceRange: "32€ - 250€",

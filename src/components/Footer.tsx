@@ -113,7 +113,7 @@ export default function Footer() {
               </div>
               <div className="flex justify-between">
                 <span>Vendredi</span>
-                <span className="text-white">9h - 17h30</span>
+                <span className="text-white">9h - 18h</span>
               </div>
               <div className="flex justify-between">
                 <span>Sam - Dim</span>
